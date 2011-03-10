@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>MarkUs Project Ideas</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+
+                <div id="logo-box">
+                    <img src="markus_logo_big.png" alt="[Logo] Markus"/>
+                </div>
+
+                <h2 id="main">MarkUs Project Ideas</h2> 
+
+				<div> 
+
+				<h3> Performance analysis</h3>
+
+				 <p> As we begin to use MarkUs is classes larger than 500
+                 students, we would like to know what the performance
+                 limitations are, and what we can do to mitigate them. If a
+                 large number of students try to submit their assignments using
+                 MarkUs in a short time window, where are the performance
+                 bottlenecks? Rails? Database? Subversion? </p>
+
+				<p>This project would involve setting up a test environment,
+                profiling, and stress testing MarkUs. An applicant should have
+                enough Linux knowledge to be able to set up concurrent tests and
+                measure performance, and enough database knowledge to be able to
+                do some profiling. Basic Ruby and Rails knowledge, web
+                application knowledge would be a strong asset. (We realize this
+                is a lot to ask, but for the right student, this could be a
+                really rewarding project.) </p>
+
+				<h3>Build a Git backend for MarkUs</h3> 
+
+				<p>Student submissions are currently stored in Subversion
+                repositories. The repositories are hidden from students who
+                submit through the web interface, but MarkUs can be configured
+                so that students use the Subversion repositories directly. Since
+                Git and other DCSVS's have become more popular, we would like to
+                provide the ability to plug Git repositories into MarkUs. </p>
+				
+				 <p>This project requires Git and Git Ruby bindings knowledge.
+                (Probably won't work with Gitolite[1])</p>
+				
+				 <h3>Web-based PDF annotations</h3>
+				
+				 <p>MarkUs supports annotating student submitted PDF files. This
+                is accomplished by converting the PDFs into JPEGs using
+                imagemagick and then tracking absolute coordinates on the image.
+                Is there a better way? This is a more exploratory project, since
+                we don't know what technologies might come into play.</p>
+
+			<h3>Integrated documentation system</h3>
+
+			<p>As the user base for MarkUs grows, the need for better
+            documentation becomes clear. It will be an interesting software
+            design problem to create an integrated documentation system that
+            tracks versions and configurations.</p>
+
+			<p>This project requires some Ruby/Rails knowledge and a desire to
+            create simple, elegant software.</p>
+
+			<h3>A VM harness for the automated test framework</h3>
+
+			<p>We have been working towards an automated test framework that
+            allows students to submit their work and receive immediate feedback.
+            To run student submitted code on a server, we need to think
+            carefully about how to do this securely. Running the tests inside a
+            locked down VM seems to be the most promising solution. </p>
+
+			<p>This project requires Linux and VM knowledge, preferably with
+            some system administration skills.</p>
+
+             </div>
+
+                <div id="copyright">
+                    <p>Copyright (c) 2008-2011 by the authors.</p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
